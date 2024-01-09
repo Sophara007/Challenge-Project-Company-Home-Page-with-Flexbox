@@ -1,0 +1,140 @@
+li {
+   list-style-type: none;
+   display: inline-block;
+margin-right: 20px;
+}
+body {
+    margin: 0;
+}
+.logo img {
+    margin-right: 10px;
+}
+.logo {
+    display: flex;
+
+}
+h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    
+}
+.logo h3 {
+    color: rgb(76, 121, 87);
+}
+nav {
+    top:0;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: aqua;
+    
+
+}
+h1 {
+    font-family: Pacifico;
+    color: hsl(39, 99%, 20%);
+}
+
+p {
+    font-size: xx-large;
+    color:black;
+}
+.mission {
+    padding-top: 50px;
+    text-align: center;
+}
+main {
+    background-image: url('clock.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: 98.67px;
+    height: 100%;
+    
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, minmax(400px));
+    
+    gap: 60px;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .product-grid {
+        grid-template-columns: 400px;
+    }
+}
+.item img {
+
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+@font-face {
+    font-family: Pacifico;
+    src: url('Pacifico/Pacifico-Regular.ttf');
+}
+.item {
+    display: grid;
+}
+.product {
+    margin-top: 90px;
+    text-align: center;
+}
+.team {
+    text-align: center;
+}
+.staff {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    
+}
+.person {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    
+  
+}
+.person p {
+    color: #3c3c3c;
+    font-size:x-large;
+    text-align:start;
+    width: 500px;
+   
+ 
+}
+
+.person img {
+  
+    margin: 0 auto;
+    width: 200px;
+   
+}
+
+    .person:nth-child(2) img {
+        flex-grow: 1;
+        
+    }
+
+.service {
+    margin-top: 100px;
+    text-align: center;
+}
+nav a {
+    font-size: large;
+}
+nav a:hover {
+  color:red;
+}
